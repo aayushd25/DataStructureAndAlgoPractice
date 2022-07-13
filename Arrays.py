@@ -25,5 +25,9 @@ def access(array, index):
     else:
         return(array[index])
 
-print(access(arr1, 3))
+def searchArray(array, value): 
+    for i in array: 
+        if i == value: 
+            return array.index(value)
+    return "The element does not exist in this array"
     
