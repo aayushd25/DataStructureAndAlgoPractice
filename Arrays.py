@@ -1,4 +1,4 @@
-from array import * 
+from array import *
 
 arr1 = array('i', [1,2,3,4,5,6])
 
@@ -16,3 +16,14 @@ def traverseArray(array):
         print(i)
 
 traverseArray(arr1)
+
+#accessing elements
+
+def access(array, index):
+    if index > len(array):
+        return("There is not any element in this array")
+    else:
+        return(array[index])
+
+print(access(arr1, 3))
+    
